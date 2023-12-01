@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salario Líquido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Calculadora de Salario Líquido</h2>
+
+    <label for="salarioBase">Salario Base:</label>
+    <input type="number" id="salarioBase" placeholder="Introduce el salario base">
+
+    <label>Pluses:</label>
+    <label for="plusNocturnidad">Plus Nocturnidad:</label>
+    <input type="number" id="plusNocturnidad" placeholder="Introduce el monto del plus nocturnidad">
+
+    <label for="plusVestuario">Plus Vestuario:</label>
+    <input type="number" id="plusVestuario" placeholder="Introduce el monto del plus de vestuario">
+
+    <label for="plusProductividad">Plus Productividad:</label>
+    <input type="number" id="plusProductividad" placeholder="Introduce el monto del plus de productividad">
+
+    <label for="plusPeligrosidad">Plus Peligrosidad:</label>
+    <input type="number" id="plusPeligrosidad" placeholder="Introduce el monto del plus de peligrosidad">
+
+    <label for="plusQuebrantoMoneda">Plus Quebranto de Moneda:</label>
+    <input type="number" id="plusQuebrantoMoneda" placeholder="Introduce el monto del plus de quebranto de moneda">
+
+    <label for="plusHerramientas">Plus Herramientas:</label>
+    <input type="number" id="plusHerramientas" placeholder="Introduce el monto del plus de herramientas">
+
+    <label for="plusConvenio">Plus Convenio:</label>
+    <input type="number" id="plusConvenio" placeholder="Introduce el monto del plus de convenio">
+
+    <label for="horasExtraEstructurales">Horas Extra Estructurales:</label>
+    <input type="number" id="horasExtraEstructurales" placeholder="Introduce las horas extra estructurales">
+
+    <label for="horasExtraFuerzaMayor">Horas Extra Fuerza Mayor:</label>
+    <input type="number" id="horasExtraFuerzaMayor" placeholder="Introduce las horas extra por fuerza mayor">
+
+    <label for="pagasExtras">Pagas Extras:</label>
+    <input type="number" id="pagasExtras" placeholder="Introduce el monto de las pagas extras">
+
+    <label for="irpf">IRPF (%):</label>
+    <input type="number" id="irpf" placeholder="Introduce el porcentaje de IRPF">
+
+    <button onclick="calcularSalario()">Calcular Salario Líquido</button>
+
+    <h3>Resultado</h3>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
